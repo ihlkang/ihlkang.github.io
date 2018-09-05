@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="后端面试经验," />
+  <meta name="keywords" content="java," />
 
 
 
@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="java中基本数据类型是什么？占多少字节 JAVA中8种基本数据类型：byte(8位)、short(16)、int(32)、long(64)、float(32)、double(64)、char(16)、boolean;   String类能被继承？为什么 String类有final修饰关键字修饰，所以不能被继承;   Java中的String，StringBuilder，StringBuffer三">
-<meta name="keywords" content="后端面试经验">
+<meta name="description" content="String，StringBuilder，StringBuffer三者的区别 运行速度:StringBuilder&amp;gt;StringBuffer&amp;gt;String,前两为字符串变量可以被修改,但String是字符串常量,不能被修改;线程安全上,StringBuilder是线程不安全的,而StringBuffer是线程安全的;StringBuilder相较于StringBuffer有速度优势，所">
+<meta name="keywords" content="java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="java基础">
 <meta property="og:url" content="http://yoursite.com/2018/09/05/java-blog/index.html">
 <meta property="og:site_name" content="疯狂の小陀螺">
-<meta property="og:description" content="java中基本数据类型是什么？占多少字节 JAVA中8种基本数据类型：byte(8位)、short(16)、int(32)、long(64)、float(32)、double(64)、char(16)、boolean;   String类能被继承？为什么 String类有final修饰关键字修饰，所以不能被继承;   Java中的String，StringBuilder，StringBuffer三">
+<meta property="og:description" content="String，StringBuilder，StringBuffer三者的区别 运行速度:StringBuilder&amp;gt;StringBuffer&amp;gt;String,前两为字符串变量可以被修改,但String是字符串常量,不能被修改;线程安全上,StringBuilder是线程不安全的,而StringBuffer是线程安全的;StringBuilder相较于StringBuffer有速度优势，所">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-05T15:04:58.736Z">
+<meta property="og:updated_time" content="2018-09-05T16:28:52.231Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java基础">
-<meta name="twitter:description" content="java中基本数据类型是什么？占多少字节 JAVA中8种基本数据类型：byte(8位)、short(16)、int(32)、long(64)、float(32)、double(64)、char(16)、boolean;   String类能被继承？为什么 String类有final修饰关键字修饰，所以不能被继承;   Java中的String，StringBuilder，StringBuffer三">
+<meta name="twitter:description" content="String，StringBuilder，StringBuffer三者的区别 运行速度:StringBuilder&amp;gt;StringBuffer&amp;gt;String,前两为字符串变量可以被修改,但String是字符串常量,不能被修改;线程安全上,StringBuilder是线程不安全的,而StringBuffer是线程安全的;StringBuilder相较于StringBuffer有速度优势，所">
 
 
 
@@ -186,7 +186,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
             首页
           </a>
@@ -194,9 +194,9 @@
       
         
         <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
+          <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
             标签
           </a>
@@ -204,9 +204,9 @@
       
         
         <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
+          <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
             分类
           </a>
@@ -214,9 +214,9 @@
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
+          <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
             归档
           </a>
@@ -295,6 +295,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/后端开发笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">后端开发笔记</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -322,30 +344,18 @@
       
 
       
-        <h3 id="java中基本数据类型是什么？占多少字节"><a href="#java中基本数据类型是什么？占多少字节" class="headerlink" title="java中基本数据类型是什么？占多少字节"></a>java中基本数据类型是什么？占多少字节</h3><ul>
-<li>JAVA中8种基本数据类型：byte(8位)、short(16)、int(32)、long(64)、float(32)、double(64)、char(16)、boolean;</li>
-</ul>
-<hr>
-<h3 id="String类能被继承？为什么"><a href="#String类能被继承？为什么" class="headerlink" title="String类能被继承？为什么"></a>String类能被继承？为什么</h3><ul>
-<li>String类有final修饰关键字修饰，所以不能被继承;</li>
-</ul>
-<hr>
-<h3 id="Java中的String，StringBuilder，StringBuffer三者的区别"><a href="#Java中的String，StringBuilder，StringBuffer三者的区别" class="headerlink" title="Java中的String，StringBuilder，StringBuffer三者的区别"></a>Java中的String，StringBuilder，StringBuffer三者的区别</h3><ul>
+        <h3 id="String，StringBuilder，StringBuffer三者的区别"><a href="#String，StringBuilder，StringBuffer三者的区别" class="headerlink" title="String，StringBuilder，StringBuffer三者的区别"></a>String，StringBuilder，StringBuffer三者的区别</h3><ul>
 <li>运行速度:StringBuilder&gt;StringBuffer&gt;String,前两为字符串变量可以被修改,但String是字符串常量,不能被修改;线程安全上,StringBuilder是线程不安全的,而StringBuffer是线程安全的;StringBuilder相较于StringBuffer有速度优势，所以多数情况下建议使用 StringBuilder类。然而在应用程序要求线程安全的情况下，则必须使用StringBuffer 类</li>
 </ul>
 <hr>
-<h3 id="Java中ArrayList和LinkedList区别"><a href="#Java中ArrayList和LinkedList区别" class="headerlink" title="Java中ArrayList和LinkedList区别"></a>Java中ArrayList和LinkedList区别</h3><ul>
-<li>ArrayList是动态数组, 适用于查找操作，LinkedList是基于链表适用于新增和删除;</li>
-</ul>
-<hr>
-<h3 id="用过哪些-Map-类，都有什么区别，HashMap-是线程安全的吗-并发下使用的-Map-是什么，他们内部原理分别是什么，比如存储方式，hashcode，扩容-默认容量"><a href="#用过哪些-Map-类，都有什么区别，HashMap-是线程安全的吗-并发下使用的-Map-是什么，他们内部原理分别是什么，比如存储方式，hashcode，扩容-默认容量" class="headerlink" title="用过哪些 Map 类，都有什么区别，HashMap 是线程安全的吗,并发下使用的 Map 是什么，他们内部原理分别是什么，比如存储方式，hashcode，扩容,默认容量"></a>用过哪些 Map 类，都有什么区别，HashMap 是线程安全的吗,并发下使用的 Map 是什么，他们内部原理分别是什么，比如存储方式，hashcode，扩容,默认容量</h3><ul>
+<h3 id="用过哪些Map-类"><a href="#用过哪些Map-类" class="headerlink" title="用过哪些Map 类"></a>用过哪些Map 类</h3><ul>
 <li>HashMap不是线程安全的，HashTable是线程安全的，但同步会带来性能开销，在不需要线程安全下，HashMap性能较好，Hashmap的迭代器初始化时会将modecount赋给迭代器的exceptedmodcount，在迭代过程中，判断modcount和exceptedmodcount是否相等，若不相等，则说明其他线程修改了map，抛出异常，这就是所谓的fail-fast策略</li>
 <li>LinkedHashMap，父类是HashMap,在HashMap基础上，在内部增加了一个链表，使用双向链表维护键值对次序，插入元素时性能低于HashMap，迭代访问时有很好性能</li>
 <li>TreeMap，根据元素的Key进行排序，Map接口派生sortMap子接口，为sortMap的实现类，Treemap的key以TreeSet形式存储</li>
 <li>HashMap内部Node数组默认大小16，自动扩容机制，重新计算容量，向HashMap对象里不断添加元素，当对象内部的数组无法装载更多元素时,使用新的数组代替已有容量小的数组</li>
 </ul>
 <hr>
-<h3 id="JAVA8的ConcurrentHashMap为什么放弃了分段锁，有什么问题吗，如果你来设计，如何设计"><a href="#JAVA8的ConcurrentHashMap为什么放弃了分段锁，有什么问题吗，如果你来设计，如何设计" class="headerlink" title="JAVA8的ConcurrentHashMap为什么放弃了分段锁，有什么问题吗，如果你来设计，如何设计"></a>JAVA8的ConcurrentHashMap为什么放弃了分段锁，有什么问题吗，如果你来设计，如何设计</h3><ul>
+<h3 id="JAVA8的ConcurrentHashMap为什么放弃了分段锁"><a href="#JAVA8的ConcurrentHashMap为什么放弃了分段锁" class="headerlink" title="JAVA8的ConcurrentHashMap为什么放弃了分段锁"></a>JAVA8的ConcurrentHashMap为什么放弃了分段锁</h3><ul>
 <li>并发编程中，使用频繁，提供了更好的写并发能力，大量使用了volatile，final，CAS等lock-free技术来减少锁竞争对于性能的影响</li>
 <li>分段锁Segment继承ReentrantLock，只在同一个分段内存在竞态关系，不同分段锁之间没有锁竞争，多线程访问容器中不同数据段的数据时，线程间就不会存在锁竞争，相比于对整个Map加锁，大大提高了高并发环境下的处理能力</li>
 <li>而在JDK1.8中摒弃了Segment分段锁机制，利用CAS+Synchronized来保证并发更新的安全，底层依然采用数组+链表+红黑树存储结构(降低时间复杂度)</li>
@@ -369,11 +379,7 @@
 <li>model.getClass(),Model.class,Class.forName(“Model”)</li>
 </ul>
 <hr>
-<h3 id="Class-forName和ClassLoader区别"><a href="#Class-forName和ClassLoader区别" class="headerlink" title="Class.forName和ClassLoader区别"></a>Class.forName和ClassLoader区别</h3><ul>
-<li>Class.forName得到的class是已经初始化完成的，ClassLoader得到的class是还没有链接的，静态块和静态对象不会得到执行</li>
-</ul>
-<hr>
-<h3 id="描述动态代理的几种实现方式，分别说出相应的优缺点"><a href="#描述动态代理的几种实现方式，分别说出相应的优缺点" class="headerlink" title="描述动态代理的几种实现方式，分别说出相应的优缺点"></a>描述动态代理的几种实现方式，分别说出相应的优缺点</h3><ul>
+<h3 id="描述动态代理的几种实现方式"><a href="#描述动态代理的几种实现方式" class="headerlink" title="描述动态代理的几种实现方式"></a>描述动态代理的几种实现方式</h3><ul>
 <li>JDK动态代理：只能代理实现了接口的类，代理对象本身并不真正实现服务，而是通过调用委托类的对象相关方法，提供特定服务，通过接口中的方法名，在动态生成的代理类中调用委托实现类的同名方法</li>
 <li>cgli代理：针对类实现代理，通过字节码技术为一个类创建子类，并在子类中采用方法拦截的技术拦截所有父类方法的调用，顺势织入横切逻辑，通过继承业务类，生成的动态代理类是业务类的子类，通过重写业务方法进行代理</li>
 </ul>
@@ -396,80 +402,32 @@
 </li>
 </ul>
 <hr>
-<h3 id="如何在父类中为子类自动完成所有的hashcode和equals实现？"><a href="#如何在父类中为子类自动完成所有的hashcode和equals实现？" class="headerlink" title="如何在父类中为子类自动完成所有的hashcode和equals实现？"></a>如何在父类中为子类自动完成所有的hashcode和equals实现？</h3><ul>
-<li>重写hashcode方法和equals方法</li>
-</ul>
-<hr>
-<h3 id="访问修饰符作用范围"><a href="#访问修饰符作用范围" class="headerlink" title="访问修饰符作用范围"></a>访问修饰符作用范围</h3><ul>
-<li>private仅能在类内被访问，子类不能继承也不能访问</li>
-<li>default可以被同一个包内的其他类访问</li>
-<li>protected修饰的方法和属性，在同一个包内可以被访问和继承，不同包内，子类可以继承，非子类不能访问</li>
-<li>public修饰的方法和属性，可以被任意包内的类访问</li>
-</ul>
-<hr>
 <h3 id="深拷贝和浅拷贝的区别"><a href="#深拷贝和浅拷贝的区别" class="headerlink" title="深拷贝和浅拷贝的区别"></a>深拷贝和浅拷贝的区别</h3><ul>
 <li>是否真正获取一个对象的复制实体，而不是引用</li>
 <li>浅拷贝是指向已存在的内存地址，B浅拷贝A，修改A的值，B会跟着变</li>
 <li>深拷贝是申请了一个新的内存，B不会跟着A变化，不会在释放内存时出现浅拷贝释放同一个内存的错误</li>
 </ul>
 <hr>
-<h3 id="数组和链表数据结构，各自的时间复杂度"><a href="#数组和链表数据结构，各自的时间复杂度" class="headerlink" title="数组和链表数据结构，各自的时间复杂度"></a>数组和链表数据结构，各自的时间复杂度</h3><ul>
+<h3 id="数组和链表数据结构"><a href="#数组和链表数据结构" class="headerlink" title="数组和链表数据结构"></a>数组和链表数据结构</h3><ul>
 <li>数组是线性结构，连续存储，一段连续的内存空间</li>
 <li>链表是一种元素内存空间离散排列的线性数据结构，彼此通过指针相连</li>
-</ul>
-<hr>
-<h3 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h3><ul>
-<li>error和exception的区别：<ul>
-<li>两者均继承自Throwale类</li>
-<li>exception:可以是可控的(checked)或不可控的(unchecked),表示由程序员导致的错误，应该在应用程序级被处理</li>
-<li>error:总是不可控的，经常用来表示系统错误或底层资源的错误，可以的话，应该在系统级被捕获</li>
-</ul>
-</li>
-<li>运行时异常(RuntimeExepction)和检查式异常(checkedExecption)区别：<ul>
-<li>运行时异常：我们可以不处理，当出现这样的异常时，总是由虚拟机接管，如常见的空指针异常</li>
-<li>检查式异常：我们经常遇到的IO异常及sql异常，对于这种异常，java编译器要求我们必须对出现的这些异常进行catch</li>
-</ul>
-</li>
-<li>5个运行时异常： <ul>
-<li>NullPointerException 空指针引用异常</li>
-<li>ClassCastException 类型强制转换异常</li>
-<li>IllegalArgumentException 传递非法参数异常</li>
-<li>IndexOutOfBoundsException 下标越界异常</li>
-<li>NumberFormatException 数字格式异常</li>
-</ul>
-</li>
 </ul>
 <hr>
 <h3 id="自定义Java-lang-String会被加载？"><a href="#自定义Java-lang-String会被加载？" class="headerlink" title="自定义Java.lang.String会被加载？"></a>自定义Java.lang.String会被加载？</h3><ul>
 <li>不会，双亲委派模型机制不允许，考虑到安全因素，如果不使用这种委托模式，我们随时使用自定义的String来动态替换java核心api中定义类型，会存在非常大的安全隐患，并且当父类已经加载了该类时，子类没必要再次加载，节省加载损耗</li>
 </ul>
 <hr>
-<h3 id="什么时候需要重新实现Object中的hashCode和equals方法，为什么重写equals需要重写hashcode"><a href="#什么时候需要重新实现Object中的hashCode和equals方法，为什么重写equals需要重写hashcode" class="headerlink" title="什么时候需要重新实现Object中的hashCode和equals方法，为什么重写equals需要重写hashcode"></a>什么时候需要重新实现Object中的hashCode和equals方法，为什么重写equals需要重写hashcode</h3><ul>
-<li>Object中的equals方法是比较两个对象地址是否相等，若比较对象的内容是否相等，需要重写equals方法</li>
-<li>当类的实例对象需要被采用哈希算法进行存储和检索时，需要按要求重写hashCode方法</li>
-<li>hashset中先判断两个对象的hashCode是否相等，再判断equals是否相等</li>
-<li>本来equals的两个对象，若没有重写hashcode,当进行put时，实质上是通过Object的hashCode计算下标，不同的对象可能会得到不同的下标</li>
-</ul>
-<hr>
-<h3 id="jdk1-5之后引入了泛型，泛型的存在是为了解决什么问题？"><a href="#jdk1-5之后引入了泛型，泛型的存在是为了解决什么问题？" class="headerlink" title="jdk1.5之后引入了泛型，泛型的存在是为了解决什么问题？"></a>jdk1.5之后引入了泛型，泛型的存在是为了解决什么问题？</h3><ul>
-<li>泛型是为了解决开发中，遇到功能模块相似，只是数据类型不同的情况，合并冗余的代码</li>
-</ul>
-<hr>
-<h3 id="什么是序列化，怎么序列化，为什么序列化，会遇到什么问题？"><a href="#什么是序列化，怎么序列化，为什么序列化，会遇到什么问题？" class="headerlink" title="什么是序列化，怎么序列化，为什么序列化，会遇到什么问题？"></a>什么是序列化，怎么序列化，为什么序列化，会遇到什么问题？</h3><ul>
+<h3 id="什么是序列化"><a href="#什么是序列化" class="headerlink" title="什么是序列化"></a>什么是序列化</h3><ul>
 <li>序列化：将对象转换为字节序列的过程</li>
 <li>反序列化：将字节序列恢复为对象的过程</li>
 <li>为什么序列化：将内存中的对象状态保存到一个文件中或者数据库中，用套接字在网络上传送对象，通过RMI传输对象时</li>
 <li>实现Serializable接口即可实现序列化，transient修饰的属性不会被序列化</li>
 </ul>
 <hr>
-<h3 id="RMI和RPC区别"><a href="#RMI和RPC区别" class="headerlink" title="RMI和RPC区别"></a>RMI和RPC区别</h3><ul>
-<li>RMI远程方法调用：通过在客户端的Stub对象作为远程接口进行远程方法的调用。每个远程方法都具有方法签名。如果一个方法在服务器上执行，但是没有相匹配的签名被添加到这个远程接口(stub)上，那么这个新方法就不能被RMI客户方所调用</li>
-<li>RPC远程过程调用：通过网络服务协议向远程主机发送请求，请求包含了一个参数集和一个文本值，通常形成“classname.methodname(参数集)”的形式。RPC远程主机就去搜索与之相匹配的类和方法，找到后就执行方法并把结果编码，通过网络协议发回</li>
-</ul>
-<hr>
 <h3 id="IP地址的正则表达式"><a href="#IP地址的正则表达式" class="headerlink" title="IP地址的正则表达式"></a>IP地址的正则表达式</h3><ul>
 <li>((25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d))).){3}(25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d)))  ?代表一个或零个[1-9]</li>
 </ul>
+<hr>
 
       
     </div>
@@ -487,7 +445,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/后端面试经验/" rel="tag"># 后端面试经验</a>
+            <a href="/tags/java/" rel="tag"># java</a>
           
         </div>
       
@@ -591,7 +549,7 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives/">
+                <a href="/archives">
               
                   <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
@@ -600,15 +558,24 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
             
               
               
               <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">2</span>
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">标签</span>
-                
+                </a>
               </div>
             
 
@@ -646,7 +613,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#java中基本数据类型是什么？占多少字节"><span class="nav-number">1.</span> <span class="nav-text">java中基本数据类型是什么？占多少字节</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#String类能被继承？为什么"><span class="nav-number">2.</span> <span class="nav-text">String类能被继承？为什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java中的String，StringBuilder，StringBuffer三者的区别"><span class="nav-number">3.</span> <span class="nav-text">Java中的String，StringBuilder，StringBuffer三者的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java中ArrayList和LinkedList区别"><span class="nav-number">4.</span> <span class="nav-text">Java中ArrayList和LinkedList区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用过哪些-Map-类，都有什么区别，HashMap-是线程安全的吗-并发下使用的-Map-是什么，他们内部原理分别是什么，比如存储方式，hashcode，扩容-默认容量"><span class="nav-number">5.</span> <span class="nav-text">用过哪些 Map 类，都有什么区别，HashMap 是线程安全的吗,并发下使用的 Map 是什么，他们内部原理分别是什么，比如存储方式，hashcode，扩容,默认容量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JAVA8的ConcurrentHashMap为什么放弃了分段锁，有什么问题吗，如果你来设计，如何设计"><span class="nav-number">6.</span> <span class="nav-text">JAVA8的ConcurrentHashMap为什么放弃了分段锁，有什么问题吗，如果你来设计，如何设计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#抽象类和接口的区别"><span class="nav-number">7.</span> <span class="nav-text">抽象类和接口的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#讲讲理解的NIO"><span class="nav-number">8.</span> <span class="nav-text">讲讲理解的NIO</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#反射的原理及创建类的三种方式"><span class="nav-number">9.</span> <span class="nav-text">反射的原理及创建类的三种方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Class-forName和ClassLoader区别"><span class="nav-number">10.</span> <span class="nav-text">Class.forName和ClassLoader区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#描述动态代理的几种实现方式，分别说出相应的优缺点"><span class="nav-number">11.</span> <span class="nav-text">描述动态代理的几种实现方式，分别说出相应的优缺点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#final的用途"><span class="nav-number">12.</span> <span class="nav-text">final的用途</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三种单例模式"><span class="nav-number">13.</span> <span class="nav-text">三种单例模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何在父类中为子类自动完成所有的hashcode和equals实现？"><span class="nav-number">14.</span> <span class="nav-text">如何在父类中为子类自动完成所有的hashcode和equals实现？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#访问修饰符作用范围"><span class="nav-number">15.</span> <span class="nav-text">访问修饰符作用范围</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#深拷贝和浅拷贝的区别"><span class="nav-number">16.</span> <span class="nav-text">深拷贝和浅拷贝的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数组和链表数据结构，各自的时间复杂度"><span class="nav-number">17.</span> <span class="nav-text">数组和链表数据结构，各自的时间复杂度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#异常"><span class="nav-number">18.</span> <span class="nav-text">异常</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义Java-lang-String会被加载？"><span class="nav-number">19.</span> <span class="nav-text">自定义Java.lang.String会被加载？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#什么时候需要重新实现Object中的hashCode和equals方法，为什么重写equals需要重写hashcode"><span class="nav-number">20.</span> <span class="nav-text">什么时候需要重新实现Object中的hashCode和equals方法，为什么重写equals需要重写hashcode</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jdk1-5之后引入了泛型，泛型的存在是为了解决什么问题？"><span class="nav-number">21.</span> <span class="nav-text">jdk1.5之后引入了泛型，泛型的存在是为了解决什么问题？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是序列化，怎么序列化，为什么序列化，会遇到什么问题？"><span class="nav-number">22.</span> <span class="nav-text">什么是序列化，怎么序列化，为什么序列化，会遇到什么问题？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RMI和RPC区别"><span class="nav-number">23.</span> <span class="nav-text">RMI和RPC区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#IP地址的正则表达式"><span class="nav-number">24.</span> <span class="nav-text">IP地址的正则表达式</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#String，StringBuilder，StringBuffer三者的区别"><span class="nav-number">1.</span> <span class="nav-text">String，StringBuilder，StringBuffer三者的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#用过哪些Map-类"><span class="nav-number">2.</span> <span class="nav-text">用过哪些Map 类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JAVA8的ConcurrentHashMap为什么放弃了分段锁"><span class="nav-number">3.</span> <span class="nav-text">JAVA8的ConcurrentHashMap为什么放弃了分段锁</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#抽象类和接口的区别"><span class="nav-number">4.</span> <span class="nav-text">抽象类和接口的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#讲讲理解的NIO"><span class="nav-number">5.</span> <span class="nav-text">讲讲理解的NIO</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#反射的原理及创建类的三种方式"><span class="nav-number">6.</span> <span class="nav-text">反射的原理及创建类的三种方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#描述动态代理的几种实现方式"><span class="nav-number">7.</span> <span class="nav-text">描述动态代理的几种实现方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#final的用途"><span class="nav-number">8.</span> <span class="nav-text">final的用途</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三种单例模式"><span class="nav-number">9.</span> <span class="nav-text">三种单例模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#深拷贝和浅拷贝的区别"><span class="nav-number">10.</span> <span class="nav-text">深拷贝和浅拷贝的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数组和链表数据结构"><span class="nav-number">11.</span> <span class="nav-text">数组和链表数据结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义Java-lang-String会被加载？"><span class="nav-number">12.</span> <span class="nav-text">自定义Java.lang.String会被加载？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是序列化"><span class="nav-number">13.</span> <span class="nav-text">什么是序列化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#IP地址的正则表达式"><span class="nav-number">14.</span> <span class="nav-text">IP地址的正则表达式</span></a></li></ol></div>
             
 
           </div>

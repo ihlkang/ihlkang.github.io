@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="综合技术," />
+  <meta name="keywords" content="Hexo,Next," />
 
 
 
@@ -82,14 +82,14 @@
 
 
 <meta name="description" content="前言若你对Hexo默认的主题不是很满意,那么Next主题一定会让你心动. Next安装与启动安装Next具体安装非常简单,你可以直接下载将文件拷贝到Hexo下themes目录里,也可以在Hexo目录下右键git bash通过命令:1git clone https://github.com/iissnan/hexo-theme-next themes/next Next主题会自动下载到themes目">
-<meta name="keywords" content="综合技术">
+<meta name="keywords" content="Hexo,Next">
 <meta property="og:type" content="article">
 <meta property="og:title" content="补充Hexo plus Next主题">
 <meta property="og:url" content="http://yoursite.com/2018/09/05/hexo-plus-blog/index.html">
 <meta property="og:site_name" content="疯狂の小陀螺">
 <meta property="og:description" content="前言若你对Hexo默认的主题不是很满意,那么Next主题一定会让你心动. Next安装与启动安装Next具体安装非常简单,你可以直接下载将文件拷贝到Hexo下themes目录里,也可以在Hexo目录下右键git bash通过命令:1git clone https://github.com/iissnan/hexo-theme-next themes/next Next主题会自动下载到themes目">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-05T15:13:04.153Z">
+<meta property="og:updated_time" content="2018-09-05T16:23:52.443Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="补充Hexo plus Next主题">
 <meta name="twitter:description" content="前言若你对Hexo默认的主题不是很满意,那么Next主题一定会让你心动. Next安装与启动安装Next具体安装非常简单,你可以直接下载将文件拷贝到Hexo下themes目录里,也可以在Hexo目录下右键git bash通过命令:1git clone https://github.com/iissnan/hexo-theme-next themes/next Next主题会自动下载到themes目">
@@ -186,7 +186,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
             首页
           </a>
@@ -194,9 +194,9 @@
       
         
         <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
+          <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
             标签
           </a>
@@ -204,9 +204,9 @@
       
         
         <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
+          <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
             分类
           </a>
@@ -214,9 +214,9 @@
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
+          <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
             归档
           </a>
@@ -295,6 +295,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/综合技术/" itemprop="url" rel="index">
+                    <span itemprop="name">综合技术</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -328,6 +350,8 @@
 <h4 id="启用主题"><a href="#启用主题" class="headerlink" title="启用主题"></a>启用主题</h4><p>与所有Hexo主题启用的模式一样,当克隆/下载完成后,打开主站点配置文件,找到theme字段,并将其值更改为next:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure></p>
 <p>通过Hexo s打开本地服务,浏览器输入:<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a></p>
 <h3 id="Next主题配置"><a href="#Next主题配置" class="headerlink" title="Next主题配置"></a>Next主题配置</h3><p>E:\blog\themes\next目录下有另外一个配置文件,_config.yml,可以在menu中添加categories和tags等功能，之后在主目录下_config.yml的Directory中加入:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ tag_dir: tags</span><br><span class="line">$ category_dir: categories</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
+<p>输入命令后，在myBlog/source下会新生成一个新的文件夹tags，在该文件夹下会有一个index.md文件,加入type: “tags”即可实现标签，同理分类一样</p>
 <p>主目录下_config.yml还可以更改如下等设置:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">title: 疯狂の小陀螺</span><br><span class="line">subtitle: 世界以痛吻我，我亦报之以歌</span><br><span class="line">author: kang</span><br><span class="line">language: zh-Hans</span><br></pre></td></tr></table></figure></p>
 <p>当然Next主题还有许多其他的设置,感兴趣的朋友可以自己去查阅.</p>
 
@@ -347,7 +371,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/综合技术/" rel="tag"># 综合技术</a>
+            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+          
+            <a href="/tags/Next/" rel="tag"># Next</a>
           
         </div>
       
@@ -447,7 +473,7 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives/">
+                <a href="/archives">
               
                   <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
@@ -456,15 +482,24 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
             
               
               
               <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">2</span>
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">标签</span>
-                
+                </a>
               </div>
             
 
